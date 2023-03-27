@@ -1,0 +1,163 @@
+#include <iostream>
+using namespace std;
+
+// bool gk(int arr[], int n, int key){
+//   for(int i=0; i<n; i++){
+//     if(arr[i]==key){
+//       return 1;
+//     }
+//   }
+//   return 0;
+// }
+
+// void reverse(int num[], int n){
+//   int start= 0;
+//   int end=n-1;
+//   while(start<=end){
+//     swap(num[start], num[end]);
+//     start++;
+//       end--;
+//   }
+// }
+
+int main() {
+
+// int a;
+//   cout<<"Enter the size of Array ::\n ";
+//   cin>>a;
+
+//   int arr[100];
+//   cout<<"Enter the Array Elements :\n";
+//   for (int i=0; i<a; i++){
+  
+//     cin>>arr[i];
+
+//     }
+//   int b=0;
+//   for(int i=0; i<a; i++){
+    
+//     b = arr[i]+b ;
+
+//     }
+//      cout<<"The Sum of Array Elements are :: "<<b;
+
+
+  // int arr[20]= {2,4,5,-7,-6,8,9,2,3,0,-1,-8,7,-9,-3,18,29,54,86,78};
+  
+  // int key;
+  // cout<<"Enter the Key Element : ";
+  // cin>>key;
+
+  // bool found = gk(arr, 20, key);
+
+  // if(found){
+  //   cout<<key<<" is present \n";
+  // }
+  // else{
+  //   cout<<key<<" is absent \n";
+  // }
+  
+// cout<<"The Normal Array Element are :: \n";
+// int arr[10]={1,2,3,4,5,6,7,8,9,0};
+//   for(int i=0; i<10; i++){
+//     cout<<arr[i]<<" ";
+//   }
+  
+//   reverse(arr, 10);
+//   cout<<"\nThe reverse Array Element are :: \n";
+//   for(int i=0; i<10; i++){
+//   cout<<arr[i]<<" ";
+
+//     }
+
+
+// int n;
+//   cout<<"Enter the Array Elements :: \n";
+//   cin>>n;
+  
+// int arr[10];
+//   for(int i=0; i<n; i++){
+//     cin>>arr[i];
+//   }
+
+//   cout<<"The Normal Array Element are :: \n";
+//   for(int i=0; i<n; i++){
+//     cout<<arr[i]<<" ";
+//   }
+  
+//   reverse(arr, 10);
+//   cout<<"\nThe reverse Array Element are :: \n";
+//   for(int i=0; i<10; i++){
+//   cout<<arr[i]<<" ";
+
+//     }
+
+
+// int arr[10]={2,3,4,8,6,9,-4,-7,-9,0};
+//   cout<<"The Normal Array :";
+//     for(int i=0; (i)<10; i++){
+//     cout<<arr[i]<<" ";
+//   }
+//   cout<<endl;
+//   for(int i=0; (i)<10 ; i +=2){
+//     swap(arr[i], arr[i+1]);
+    
+//   }
+// cout<<"The change Array :";
+//   for(int i=0; (i)<10; i++){
+//     cout<<arr[i]<<" ";
+//   }
+
+
+
+
+//   int arr[10]={2,3,4,8,6,9,-4,-7,-9,0};
+//   cout<<"The Normal Array :";
+//     for(int i=0; (i)<10; i++){
+//     cout<<arr[i]<<" ";
+//   }
+//   cout<<endl;
+//   for(int i=0; (i)<10 ; i +=2){
+//     // swap(arr[i], arr[i+1]);
+
+//     int temp;
+//     temp = arr[i+1];
+//     arr[i+1]=arr[i];
+//     arr[i]=temp;
+    
+//   }
+// cout<<"The change Array :";
+//   for(int i=0; (i)<10; i++){
+//     cout<<arr[i]<<" ";
+//   }
+  
+
+  // int arr[8]={1,4,5,2,3,6,7,8};
+ // int i,t;
+ //  t=sizeof(arr)/sizeof(arr[n]);
+ //  cout<<"The Size of an Array is : "<<t;
+
+
+  int arr[10]={2,3,4,5,6,7,8,9};
+  int arr2[10]={1,2,4,5,6,8,9};
+  int arr3[20];
+  //increase array 1
+  for(int i=0; i<10; i++){
+    for(int j=0; j<10; j++){
+      if(arr[i]==arr2[i]){
+        
+      cout<<arr3[i]<<" ";
+         arr2[i]=-2;
+      break;
+    }
+     
+    }
+  }
+
+  
+  return 0;
+  
+  }
+
+
+
