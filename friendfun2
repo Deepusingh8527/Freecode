@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+class B;
+class A
+{
+    private:
+    int a;
+    public:
+    void one(){
+      a=10;
+    }
+
+friend void C(A x, B y);
+};
+
+class B
+{
+    private:
+    int b;
+    public:
+    void one(){
+      b=10;
+    }
+
+  friend void C(A x, B y);
+};
+
+void C(A x, B y){
+
+  int c;
+  c = x.a + y.b;
+  cout<<"The Sum of both friends money is :: "<<c<<endl;
+}
+
+int main()
+{
+  A obj;
+  obj.one();
+  B obj2;
+  obj2.one();
+  C(obj, obj2);
+
+  return 0;
+}
