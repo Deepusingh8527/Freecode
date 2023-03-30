@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class sonu {
+string a;
+public:
+void one(){
+ a = "Friend Function is working successfully";
+}
+
+friend void umesh(sonu z);
+};
+
+void umesh(sonu z){
+  cout<<"Note :: "<<z.a;
+}
+
+int main() {
+  sonu obj;
+ obj.one();
+  umesh(obj);
+
+  return 0;
+}
