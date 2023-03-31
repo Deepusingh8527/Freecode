@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+class GrandFather
+{
+    protected:
+    int a,b,c;
+    public:
+    void A(){
+    cout<<"Enter Any Two Numbers :: "<<endl;
+    cin>>a>>b;
+      c=a+b;
+      cout<<"Addition is :: "<<c<<endl;
+    }
+};
+
+class Father: public GrandFather
+{
+  
+  int c;
+  public:
+  void B(){
+    
+    c=a-b;
+        cout<<"Subtraction is :: "<<c<<endl;
+  }
+};
+
+class Son: public Father
+{
+  double c;
+  public:
+  void C()
+  {
+    c=a/b;
+        cout<<"Division is :: "<<c<<endl;
+  }
+
+};
+
+int main()
+{
+
+  Son obj;
+  obj.A();
+  obj.B();
+  obj.C();
+  
+  return 0;
+}
