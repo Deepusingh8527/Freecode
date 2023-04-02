@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+    public:
+    void ani()
+{
+  cout<<"This Animal is part of the nature : \n";
+}
+
+};
+
+class cat : public Animal
+{
+    public:
+    void voice(){
+    cout<<"meow meow...... \n";
+      
+}
+};
+
+class Dog : public Animal
+{
+  public:
+  void eat()
+  {
+    cout<<"Dog food is bone \n";
+    
+  }
+
+
+};
+
+class Cow : public Animal
+{
+    public:
+    void color()
+{
+  cout<<"Cow colour is white ";
+  
+}
+};
+
+int main()
+{
+ cat obj;
+  obj.ani();
+  obj.voice();
+Dog obj1;
+  obj1.ani();
+  obj1.eat();
+Cow obj2;
+  obj2.ani();
+  obj2.color();
+  
+  return 0;
+}
