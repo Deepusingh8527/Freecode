@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+
+  virtual void dog()=0;
+};
+
+class Dog : public Animal
+{
+    public:
+    void dog()
+{
+  cout<<"Dog is best animal ";
+  
+}
+};
+
+int main()
+{
+  Dog obj;
+  obj.dog();
+  return 0;
+}
