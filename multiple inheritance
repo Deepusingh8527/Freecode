@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+int a,b,c;
+
+class A 
+{  
+  public:
+  void initial(){
+  cout<<"Enter operated parameters :: \n";
+    cin>>a>>b;
+    c=a+b;
+    cout<<"Addition :: "<<c<<endl;
+  }
+};
+
+class B
+{
+  int x,y,z;
+  public:
+  void sub(){
+    cin>>x>>y;
+    z=x-y;
+    cout<<"Subtraction is :: "<<z<<endl;
+    
+    
+  }
+
+};
+
+class C 
+{  
+  public:
+void mul(){
+
+  c=a*b;
+  cout<<"Multiplication :: "<<c<<endl;
+  
+  
+}
+
+};
+
+class D: public A, public B, public C
+{
+    public:
+    void div()
+{
+    c=a/b;
+
+    cout<<"Division is :: "<<c<<endl; 
+
+  }
+};
+
+int main()
+{
+
+  D obj;
+  obj.initial();
+  obj.sub();
+  obj.mul();
+  obj.div();
+  
+
+  return 0;
+}
