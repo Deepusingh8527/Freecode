@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class A
+{
+    public:
+
+// virtual void person()
+void person()
+{
+  cout<<"Good Morning .. \n";
+}
+
+
+};
+
+class B : public A
+{
+
+    public:
+void person()
+{
+
+  cout<<"Good Afternoon .. \n";
+}
+
+
+};
+
+int main()
+{
+
+  B obj;
+  obj.person();
+  obj.A :: person();
+  // A *p;
+  // p=&obj;
+  // p->person();
+
+  return 0;
+}
